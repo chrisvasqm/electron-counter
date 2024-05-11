@@ -6,6 +6,8 @@ const Counter = () => {
     const [counter, setCounter] = useState(0);
 
     const handleMinus = () => {
+        if (counter === 0) return;
+
         setCounter(counter - 1);
     }
 
@@ -19,9 +21,23 @@ const Counter = () => {
             alignItems='center'
             justifyContent='center'
             gap={2}>
-            <Button variant='contained' onClick={handleMinus}>-</Button>
-            <Typography variant='body1'>{counter}</Typography>
-            <Button variant='contained' onClick={handlePlus}>+</Button>
+
+            <Button
+                variant='contained'
+                onClick={handleMinus}
+                disabled={counter === 0}>
+                -
+            </Button>
+
+            <Typography variant='body1'>
+                {counter}
+            </Typography>
+
+            <Button
+                variant='contained'
+                onClick={handlePlus}>
+                +
+            </Button>
         </Stack>
     )
 }
