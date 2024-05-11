@@ -2,7 +2,7 @@
   "name": "electron-counter",
   "productName": "electron-counter",
   "version": "1.0.0",
-  "description": "My Electron application description",
+  "description": "Electron Counter App",
   "main": ".vite/build/main.js",
   "scripts": {
     "start": "electron-forge start",
