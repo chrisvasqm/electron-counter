@@ -1,9 +1,10 @@
+import { Box, Typography } from '@mui/material'
 import Counter from './Counter'
 
 const App = () => {
     return (
         <>
-            <h1>Electron Counter</h1>
+            <Typography align='center' variant='h4' marginBottom={1}>Counter</Typography>
 
             <Counter />
         </>
