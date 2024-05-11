@@ -13,6 +13,7 @@ const createWindow = () => {
     height: 200,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
+      devTools: !app.isPackaged
     },
     resizable: false
   });
