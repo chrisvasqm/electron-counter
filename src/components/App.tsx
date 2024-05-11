@@ -1,7 +1,12 @@
+import Counter from './Counter'
 
 const App = () => {
     return (
-        <div>Electron Counter</div>
+        <>
+            <h1>Electron Counter</h1>
+
+            <Counter />
+        </>
     )
 }
 
